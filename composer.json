@@ -1,0 +1,21 @@
+{
+  "name": "veloforum/veloforum-php",
+  "description": "Nowoczesny silnik forum PHP 8.3+ na wzór Invision Community 5 z natywnym migratorem bazy danych IC5.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-mbstring": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "VeloForum\\": "src/"
+    }
+  },
+  "scripts": {
+    "migrate:ic5": "php bin/migrate-ic5.php"
+  }
+}
